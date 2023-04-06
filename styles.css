@@ -3,7 +3,10 @@
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
-  background: linear-gradient(90deg, rgba(15,12,41,1) 0%, rgba(48,43,99,1) 35%, rgba(36,36,62,1) 100%);
+  background: #8E0E00;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
   --font-semi: 600;
   /*===== Colores =====*/
   /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
@@ -209,36 +212,12 @@ img {
   color: var(--first-color);
 }
 
-.home__social {
-  display: flex;
-  flex-direction: column;
-}
-
-.home__social-icon {
-  width: max-content;
-  margin-bottom: var(--mb-2);
-  font-size: 1.5rem;
-  color: var(--second-color);
-}
-
-.home__social-icon:hover {
-  color: var(--first-color);
-}
-
 
 .home__img {
   position: absolute;
   right: 0;
   bottom: 0;
   width: 260px;
-}
-
-.home__blob {
-  fill: #24243e;
-}
-
-.home__blob-img {
-  width: 360px;
 }
 
 /*BUTTONS*/
@@ -275,6 +254,7 @@ img {
   border-radius: .5rem;
 }
 /* ===== Certifications =====*/
+<<<<<<< HEAD
 .certifications__container {
   row-gap: 2rem;
   text-align: center;
@@ -440,6 +420,10 @@ img {
   line-height: 15pt;
 }
 
+=======
+/* ===== SKILLS =====*/
+/* ===== GALLERY =====*/
+>>>>>>> db00a45554350e800093de18e320fe5df0c579e5
 /* ===== CONTACT =====*/
 .contact__input {
   width: 100%;
