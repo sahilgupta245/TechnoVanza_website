@@ -254,97 +254,12 @@ img {
   border-radius: .5rem;
 }
 /* ===== Certifications =====*/
-<<<<<<< HEAD
-.certifications__container {
-  row-gap: 2rem;
-  text-align: center;
-}
-
-.certifications__subtitle {
-  margin-bottom: var(--mb-2);
-}
-
-.certifications__img {
-  justify-self: center;
-}
-
-.certifications__img img {
-  width: 400px;
-  border-radius: .5rem;
-}
-
-/* ===== contributors =====*/
-.contributors__container {
-  row-gap: 2rem;
-  text-align: center;
-}
-
-.contributors__subtitle {
-  margin-bottom: var(--mb-2);
-}
-
-.contributors__text {
-  margin-bottom: var(--mb-4);
-}
-
-.contributors__data {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  font-weight: var(--font-semi);
-  padding: .5rem 1rem;
-  margin-bottom: var(--mb-4);
-  border-radius: .5rem;
-  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
-}
-
-.contributors__icon {
-  font-size: 2rem;
-  margin-right: var(--mb-2);
-  color: var(--first-color);
-}
-
-.contributors__names {
-  display: flex;
-  align-items: center;
-}
-
-.contributors__bar {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background-color: var(--first-color);
-  height: .25rem;
-  border-radius: .5rem;
-  z-index: var(--z-back);
-}
-
-.contributors__cpp {
-  width: 5%;
-}
-
-.contributors__python {
-  width: 5%;
-}
-
-.contributors__bar-chart-square {
-  width: 65%;
-}
-
-.contributors__android {
-  width: 10%;
-}
-
-.contributors__img {
-  border-radius: .5rem;
-}
 
 /* accordion */
 
-  .accord__container{
+.accord__container{
     /* justify-content: space-between; */
-  }
+}
 
  /* Style the buttons that are used to open and close the accordion panel */
  .accordion {
@@ -423,7 +338,7 @@ img {
 =======
 /* ===== SKILLS =====*/
 /* ===== GALLERY =====*/
->>>>>>> db00a45554350e800093de18e320fe5df0c579e5
+>>>>>>> db00a45554350e800093de18e320fe5df0c579e
 /* ===== CONTACT =====*/
 .contact__input {
   width: 100%;
