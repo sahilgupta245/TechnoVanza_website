@@ -8,6 +8,11 @@
         <link rel="stylesheet" href="styles.css">
         <!-- =====  Slick theme min css ===== -->
 
+        <!-- CSS -->
+          <!-- accordian -->
+          <link rel="stylesheet" href="css/acc.css">
+          <link rel="stylesheet" href="css/gallery.css" />
+
         <script src="index.js"></script> 
 
         <!-- =====BOX ICONS===== -->
@@ -99,12 +104,14 @@
 
             <!--===== contributors =====-->
             <!--===== Gallery =====-->
+
+            
+
             <!-- Slideshow container -->
-<section class="gallery section " id="gallery">  
+ <section class="gallery section " id="gallery">  
   <h2 class="section-title">Gallery</h2>          
 <div class="slideshow-container">
 
-  <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
     <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" style="width:100%">
@@ -128,78 +135,68 @@
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
 <br>
-
-<!-- The dots/circles -->
 <div style="text-align:center">
   <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
 </div>
 </section>
+
+
+
+
+
             <!--===== kns =====-->
             <!--===== FAQ =====-->
-            <section class="contact section " id="faq">
-                <h2 class="section-title">Frequently Asked Questions</h2>
-
-                <div class="accord__container bd-grid">
-                    <button class="accordion">Section 1<i class='bx bx-plus acc_sign sign_plus  '></i></button>
-                    <div class="panel">
-                      <p>Lorem ipsum...</p>
-                    </div>
-                    
-                    <button class="accordion">Section 2</button>
-                    <div class="panel">
-                      <p>Lorem ipsum...</p>
-                    </div>
-                    
-                    <button class="accordion">Section 3</button>
-                    <div class="panel">
-                      <p>Lorem ipsum...</p>
-                    </div>                                   
-                </div>
-            </section>
-
-
-            <div class="accordion" id="accordionPanelsStayOpenExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                      Accordion Item #1
-                    </button>
-                  </h2>
-                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-                    <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
+              <section class="faq" id="faq">
+                <div class="container">
+                  <h1>Frequently Asked Question</h1>
+                  <div class="tab">
+                      <input type="radio" name="acc" id="acc1">
+                      <label for="acc1">
+                          <h2>01</h2>
+                          <h3>Heading 1</h3>
+                      </label>
+                      <div class="content">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, et totam dolorum, minus tenetur excepturi perferendis nisi dicta aut commodi velit ex asperiores optio exercitationem iste vitae veniam quas! Error.</p>
+                          
+                      </div>
                   </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                      Accordion Item #2
-                    </button>
-                  </h2>
-                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                    <div class="accordion-body">
-                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
+                  <div class="tab">
+                      <input type="radio" name="acc" id="acc2">
+                      <label for="acc2">
+                          <h2>02</h2>
+                          <h3>Heading 2</h3>
+                      </label>
+                      <div class="content">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, et totam dolorum, minus tenetur excepturi perferendis nisi dicta aut commodi velit ex asperiores optio exercitationem iste vitae veniam quas! Error.</p>
+                          
+                      </div>
                   </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                      Accordion Item #3
-                    </button>
-                  </h2>
-                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                    <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
+                  <div class="tab">
+                      <input type="radio" name="acc" id="acc3">
+                      <label for="acc3">
+                          <h2>03</h2>
+                          <h3>Heading 3</h3>
+                      </label>
+                      <div class="content">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, et totam dolorum, minus tenetur excepturi perferendis nisi dicta aut commodi velit ex asperiores optio exercitationem iste vitae veniam quas! Error.</p>
+                          
+                      </div>
                   </div>
-                </div>
+                  <div class="tab">
+                      <input type="radio" name="acc" id="acc4">
+                      <label for="acc4">
+                          <h2>04</h2>
+                          <h3>Heading 4</h3>
+                      </label>
+                      <div class="content">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, et totam dolorum, minus tenetur excepturi perferendis nisi dicta aut commodi velit ex asperiores optio exercitationem iste vitae veniam quas! Error.</p>
+                          
+                      </div>
+                  </div>
               </div>
-
-
+              </section>
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
                 <h2 class="section-title">Mention your queries</h2>
