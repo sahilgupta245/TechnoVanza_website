@@ -1,0 +1,164 @@
+/*===== GOOGLE FONTS =====*/
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap');
+/*===== VARIABLES CSS =====*/
+:root {
+  --header-height: 3rem;
+  background: #212121;  /* fallback for old browsers */
+
+
+/*===== Fuente y tipografia =====*/
+--body-font: 'Chivo Mono', monospace;
+--big-font-size: 2rem;
+--h2-font-size: 1.25rem;
+--normal-font-size: .938rem;
+--smaller-font-size: .75rem;
+/*===== Margins =====*/
+--mb-2: 1rem;
+--mb-3: 1.5rem;
+--mb-4: 2rem;
+--mb-5: 2.5rem;
+--mb-6: 3rem;
+/*===== z index =====*/
+--z-back: -10;
+--z-fixed: 100;
+}
+
+/*===== GENERAL =====*/
+.body{
+  margin: var(--header-height) 0 0 0;
+}
+
+.section {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.section__title {
+  position: relative;
+  font-family: 'Chivo Mono', monospace;
+  font-size: var(--big-font-size);
+  color: white;
+  margin-top: var(--mb-2);
+  margin-bottom: var(--mb-2);
+  text-align: center;
+}
+
+.section__text {
+  position: relative;
+  font-family: 'Chivo Mono', monospace;
+  font-size: var(--normal-font-size);
+  color: white;
+  margin-top: var(--mb-3);
+  margin-bottom: var(--mb-3);
+  text-align: justify;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/*=====Cards=====*/
+.cards{
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  width: 230px;
+  height: 280px;
+  border-radius: 2em;
+  padding: 10px;
+  background-color: #191919;
+  box-shadow: 5px 5px 30px rgb(4, 4, 4),
+                   -5px -5px 30px rgb(57, 57, 57);
+  margin: 10px;
+}
+/*======Profile Image======*/
+.profileimage {
+  position: relative; width: 100px; height: 100px; overflow: hidden; border-radius: 50%; border: none;
+  margin-top: 10px; } 
+
+.circular--portrait img { width: 100%; height: 100%; }
+
+.Name {
+  color: white;
+  font-family: 'Chivo Mono', monospace;
+  padding: 5px;
+  font-size: 15px;
+}
+
+.Bio{
+  color: white;
+  font-family: 'Chivo Mono', monospace;
+  padding: 5px;
+  font-size: 10px;
+  
+}
+
+.socialbar {
+  background-color: #191919;
+  border-radius: 3em;
+  width: 90%;
+  padding: 12px;
+  margin: 0px;
+  color: white;
+  box-shadow: 3px 3px 15px rgb(0, 0, 0),
+                   -3px -3px 15px rgb(58, 58, 58);
+}
+
+.card a {
+  transition: 0.4s;
+  color: white;
+}
+
+#github:hover {
+  color: #6e5494;
+}
+
+#instagram:hover {
+  color: #d62976;
+}
+
+#linkedin:hover {
+  color: #0A66C2;
+}
+
+#twitter:hover {
+  color: #00acee;
+}
+
+@media screen and (max-width: 500px) {
+  
+  #card1,
+  #card2,
+  #card3,
+  #card4,
+  #card5,
+  #card6
+   {
+      width: 70%;
+  }
+}
+
+#card1 {
+  display: inline-block;
+}
+
+#card2 {
+  display: inline-block;
+}
+
+#card3 {
+  display: inline-block;
+}
+
+#card4 {
+  display: inline-block;
+}
+
+#card5 {
+  display: inline-block;
+}
+
+#card6 {
+  display: inline-block;
+}
