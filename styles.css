@@ -53,6 +53,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
+  background: #778beb;
 }
 
 h1, h2, p {
@@ -116,8 +117,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color:linear-gradient(90deg, rgba(15,12,41,1) 0%, rgba(48,43,99,1) 35%, rgba(36,36,62,1) 100%);
-  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+  background-color: #312b78;
 }
 
 /*===== NAV =====*/
@@ -197,6 +197,7 @@ img {
   position: relative;
   row-gap: 5rem;
   padding: 4rem 0 5rem;
+  height: 100vh;
 }
 
 .home__data {
@@ -237,6 +238,10 @@ img {
 }
 
 /* ===== ABOUT =====*/
+.about{
+  background-color: #f15c5c;
+}
+
 .about__container {
   row-gap: 2rem;
   text-align: center;
@@ -426,6 +431,9 @@ img {
   to {opacity: 1}
 }
 /* ===== CONTACT =====*/
+.contact {
+  background-color: #4d96ff;
+}
 .contact__input {
   width: 100%;
   font-size: var(--normal-font-size);
