@@ -429,12 +429,20 @@ img {
   width: 100%;
   font-size: var(--normal-font-size);
   font-weight: var(--font-semi);
+  border-radius: 15px;
   padding: 1rem;
-  border-radius: .5rem;
-  border: 1.5px solid var(--second-color);
+  border: none;
   outline: none;
   margin-bottom: var(--mb-4);
+  background-color: #e8e8e8;
+  border-radius: 50px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
+
+.input:focus {
+outline-color: white;
+place-content: "Enter your message!";
+} 
 
 .contact__button {
   display: block;
