@@ -218,6 +218,7 @@ img {
   right: 0;
   bottom: 0;
   width: 260px;
+  top: 50px;
 }
 
 /*BUTTONS*/
@@ -542,6 +543,7 @@ place-content: "Enter your message!";
   .section {
     padding-top: 4rem;
     padding-bottom: 3rem;
+    position: static;
   }
   .section-title {
     margin-bottom: var(--mb-6);
