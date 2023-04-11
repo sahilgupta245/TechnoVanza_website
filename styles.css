@@ -53,6 +53,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
+  background: #778beb;
 }
 
 h1, h2, p {
@@ -116,8 +117,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color:linear-gradient(90deg, rgba(15,12,41,1) 0%, rgba(48,43,99,1) 35%, rgba(36,36,62,1) 100%);
-  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+  background-color: #312b78;
 }
 
 /*===== NAV =====*/
@@ -197,6 +197,7 @@ img {
   position: relative;
   row-gap: 5rem;
   padding: 4rem 0 5rem;
+  height: 100vh;
 }
 
 .home__data {
@@ -218,6 +219,7 @@ img {
   right: 0;
   bottom: 0;
   width: 260px;
+  top: 50px;
 }
 
 /*BUTTONS*/
@@ -236,6 +238,10 @@ img {
 }
 
 /* ===== ABOUT =====*/
+.about{
+  background-color: #f15c5c;
+}
+
 .about__container {
   row-gap: 2rem;
   text-align: center;
@@ -425,16 +431,27 @@ img {
   to {opacity: 1}
 }
 /* ===== CONTACT =====*/
+.contact {
+  background-color: #4d96ff;
+}
 .contact__input {
   width: 100%;
   font-size: var(--normal-font-size);
   font-weight: var(--font-semi);
+  border-radius: 15px;
   padding: 1rem;
-  border-radius: .5rem;
-  border: 1.5px solid var(--second-color);
+  border: none;
   outline: none;
   margin-bottom: var(--mb-4);
+  background-color: #e8e8e8;
+  border-radius: 50px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
+
+.input:focus {
+outline-color: white;
+place-content: "Enter your message!";
+} 
 
 .contact__button {
   display: block;
@@ -534,6 +551,7 @@ img {
   .section {
     padding-top: 4rem;
     padding-bottom: 3rem;
+    position: static;
   }
   .section-title {
     margin-bottom: var(--mb-6);

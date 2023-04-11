@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
+    background-color: aquamarine;
 }
 .wrapper img {
     vertical-align: middle;
