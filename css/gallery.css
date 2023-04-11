@@ -4,10 +4,13 @@
     align-items: center;
     background-color: aquamarine;
 }
+
+.gallery-header{
+  background-color: #7fffd4;
+}
 .wrapper img {
     vertical-align: middle;
-    height: 25rem;
-    width: 10rem;
+    height: auto;
   }
   
   /* Position the image container (needed to position the left and right arrows) */
@@ -108,23 +111,18 @@
   }
 
 
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     .prev, .next{
         margin-top: -434px;
     }
     .row{
         display: flex;
         flex-direction: column;
-        /* justify-content: center; */
         align-items: center;
-        /* justify-self: center; */
-        /* justify-items: center; */
     }
     
     .column{
-        /* margin: 5px; */
         padding: .4rem 2rem;
         width: 100%;
-        /* height: 10px; */
     }
-  }
+  } */
