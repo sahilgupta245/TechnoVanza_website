@@ -4,10 +4,13 @@
     align-items: center;
     background-color: aquamarine;
 }
+
+.gallery-header{
+  background-color: #7fffd4;
+}
 .wrapper img {
     vertical-align: middle;
     height: auto;
-    /* max-height:80vh; */
   }
   
   /* Position the image container (needed to position the left and right arrows) */
