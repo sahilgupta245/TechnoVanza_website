@@ -60,6 +60,9 @@
 .cards{
   align-items: center;
   justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
 
 .card {
