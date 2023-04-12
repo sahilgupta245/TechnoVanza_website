@@ -25,7 +25,8 @@
 
 /*===== GENERAL =====*/
 .body{
-  margin: var(--header-height) 0 0 0;
+  /* margin: var(--header-height) 0 0 0; */
+  margin: 0%;
 }
 
 .section {
@@ -161,4 +162,13 @@
 
 #card6 {
   display: inline-block;
+}
+
+
+center {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: space-evenly;
 }
