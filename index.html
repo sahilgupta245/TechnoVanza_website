@@ -11,9 +11,15 @@
     <!-- CSS -->
     <!-- accordian -->
     <link rel="stylesheet" href="css/acc.css">
-    <link rel="stylesheet" href="css/gallery.css" />
+
+    <link rel="stylesheet" href="css/newgal.css">
+         
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
 
     <script src="index.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 
     <!-- =====BOX ICONS===== -->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -152,13 +158,59 @@
             </div>
         </section>
 
+            <!-- New Gallery -->
+            <h2 class="gallery-header" style="text-align:center"> Gallery</h2>
+            <section class="new-gallery">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1500622944204-b135684e99fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJhbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="https://plus.unsplash.com/premium_photo-1675127366476-98e3f3acca8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bmF0dXJhbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1585016495481-91613a3ab1bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bmF0dXJhbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1500828131278-8de6878641b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fG5hdHVyYWx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1441239372925-ac0b51c4c250?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fG5hdHVyYWx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG5hdHVyYWx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1535463731090-e34f4b5098c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fG5hdHVyYWx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG5hdHVyYWx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" />
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+                
+                
+                <svg class="icons" style="display: none;">
+                    <symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+                        <polyline points='328 112 184 256 328 400'
+                                     style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+                    </symbol>
+                    <symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+                        <polyline points='184 112 328 256 184 400'
+                                     style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+                    </symbol>
+                </svg>
+            </section>
 
         <!--===== contributors =====-->
         <!--===== Gallery =====-->
         <section class="gallery section " id="gallery">
-            <h2 class="gallery-header section-title" > Gallery</h2>
+            <!-- <h2 class="gallery-header section-title" > Gallery</h2> -->
 
-            <div class="gallery ">
+            <!-- <div class="gallery ">
                 <div class="wrapper">
                     <div class="mySlides">
                         <div class="numbertext">1 / 6</div>
@@ -237,7 +289,7 @@
 
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
         <!--===== FAQ =====-->
         <section class="faq" id="faq">
@@ -330,9 +382,29 @@
         <p class="footer__copy">&#169; Technovanza. All rights reserved</p>
     </footer>
 
+       
 
-    <!-- Gallery -->
-    <script src="js/gallery.js"></script>
+        <!-- !-- Swiper JS --> 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+              effect: "coverflow",
+              grabCursor: true,
+              centeredSlides: true,
+              slidesPerView: "auto",
+              coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+              },
+              pagination: {
+                el: ".swiper-pagination",
+              },
+            });
+          </script>
 
 
     <!--===== SCROLL REVEAL =====-->
