@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+	text-decoration: none;
+	scroll-behavior: smooth;
+        }
+
+        :root{
+	--bg-color: #ffffff;
+	--text-color: #000;
+	--second-color: #0095ff;
+	--main-color: #f75023;
+	--big-font: 5rem;
+	--h2-font: 3rem;
+	--p-font: 1.1rem;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    /* text-align: center; */
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    /* padding: 30px 18%; */
+    transition: .3s;
+}
+        /* .home{
+            
+            background: url("https://cdn.dribbble.com/users/2271181/screenshots/18266345/media/139dc43db8e0ceb5437e6a06d6923d3d.jpg");
+        
+            min-height: 100vh;
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+        } */
+
+        .logo{
+            display: flex;
+            font-size: 30px;
+            font-weight: 600;
+            color: var(--bg-color);
+            padding: 30px;
+        }
+
+        .navlist{
+            display: flex;
+        }
+
+        .navlist li{
+            position: relative;
+        }
+
+        .navlist a{
+            font-size: var(--p-font);
+            color: var(--text-color);
+            font-weight: 500;
+            padding: 10px 27px;
+        }
+
+        .navlist a::after{
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: var(--main-color);
+            bottom: -3px;
+            left: 0;
+            transition: ease .40s;
+        }
+
+        .navlist a:hover::after{
+            width: 100%;
+        }
+
+
+         h2{
+            margin: 10px 0 25px;
+            font-size: var(--big-font);
+            line-height: 1;
+            font-weight: 500;
+        }
+         h1{
+            
+        }
+
+        /* .home-text p{
+            font-size: var(--p-font);
+	color: var(--bg-color);
+	line-height: 28px;
+	margin-top: 200px;
+        } */
+
+        .home{
+	min-height: 100vh;
+	height: 100%;
+	width: 100%;
+	background: url("https://cdn.dribbble.com/users/2271181/screenshots/18266345/media/139dc43db8e0ceb5437e6a06d6923d3d.jpg");
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	grid-gap: 4rem;
+}
+.home-text h1{
+	margin: 10px 0px 25px;
+	font-size: var(--big-font);
+	line-height: 1;
+	font-weight: 500;
+}
+.home-text h5{
+	margin-bottom: 23px;
+	font-size: 19px;
+	font-weight: 500;
+}
+span{
+	color: var(--main-color);
+}
+.home-text h3{
+	color: var(--main-color);
+	font-size: 20px;
+	font-weight: 500;
+}
+.home-text p{
+	font-size: var(--p-font);
+	color: var(--second-color);
+	line-height: 28px;
+	margin-bottom: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <section>
+
+        <header>
+            <a href="#" class="logo">TechnoVanza</a>
+            
+            <ul class="navlist">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contributors</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </header>
+
+        <section class="home">
+            <div class="home-text">
+                <h1>TechnoVanza</h1>
+                <h5>MCA department <span>Galgotia College</span> </h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, delectus repudiandae quidem saepe minus commodi qui obcaecati quis recusandae ut accusantium impedit, dolor deleniti numquam ab tenetur? Numquam, dolores libero!</p>
+            </div>
+        </section>
+    </section>
+    
+</body>
+</html>
