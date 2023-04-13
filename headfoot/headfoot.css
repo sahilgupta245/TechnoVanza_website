@@ -256,6 +256,10 @@ header {
   .menu {
     display: flex;
   }
+  .menu-inner{
+    width: 90vw;
+    height: 90vh;
+  }
 }
 .menu-nav {
   display: flex;
