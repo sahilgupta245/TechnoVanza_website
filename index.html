@@ -24,6 +24,42 @@
        <script type="text/javascript">
        (function(){ emailjs.init("deG9ezTSmdJtt90G6");})();</script>
     
+
+    <link rel="stylesheet" href="../headfoot/headfoot.css" />
+
+    <script>
+      function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /*loop through a collection of all HTML elements:*/
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+          elmnt = z[i];
+          /*search for elements with a certain atrribute:*/
+          file = elmnt.getAttribute("include-headfoot");
+          if (file) {
+            /*make an HTTP request using the attribute value as the file name:*/
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+              if (this.readyState == 4) {
+                if (this.status == 200) {
+                  elmnt.innerHTML = this.responseText;
+                }
+                if (this.status == 404) {
+                  elmnt.innerHTML = "Page not found.";
+                }
+                /*remove the attribute, and call this function once more:*/
+                elmnt.removeAttribute("include-headfoot");
+                includeHTML();
+              }
+            };
+            xhttp.open("GET", file, true);
+            xhttp.send();
+            /*exit the function:*/
+            return;
+          }
+        }
+      }
+    </script>
     </head>
     <body>
         <section class="wrapper">
@@ -33,7 +69,7 @@
         </section>
 
         <!--===== HEADER =====-->
-        <header class="l-header">
+        <!-- <header class="l-header">
             <nav class="nav bd-grid ">
                 <div>
                     <a href="#" class="nav__logo">TechnoVanza</a>
@@ -53,7 +89,9 @@
                 </div>
 
             </nav>
-        </header>
+        </header> -->
+        <header include-headfoot="../headfoot/navbar.html"></header>
+
 
         <main class="l-main">
             <!--===== HOME =====-->
@@ -274,7 +312,7 @@
         </main>
 
         <!--===== FOOTER =====-->
-        <footer class="footer">
+        <!-- <footer class="footer">
             <p class="footer__title">TechnoVanza</p>
             <div class="footer__social">
                 <a href="https://www.linkedin.com/in/TechnoVanza/" class="footer__icon"><i class='bx bxl-linkedin-square' ></i></a>
@@ -285,8 +323,12 @@
             </div>
 
             <p class="footer__copy">&#169; Technovanza. All rights reserved</p>
-        </footer>
+        </footer> -->
+        <footer include-headfoot="../headfoot/footer.html"></footer>
 
+    <script>
+      includeHTML();
+    </script>
        
         <!-- Gallery -->
         <script src="js/gallery.js"></script>
