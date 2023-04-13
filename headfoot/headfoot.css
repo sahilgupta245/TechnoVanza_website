@@ -302,7 +302,7 @@ header {
   transform: scaleX(1);
   transform-origin: left;
 }
-.menu .gallery {
+.menu .nav-gallery {
   margin-top: 60px;
   text-align: center;
 }
